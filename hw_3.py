@@ -5,6 +5,6 @@ radius = float(input("Enter the radius: "))
 pi = 3.14
 
 ## Our formula - area = pi*radius**2
-
+## **2 - to square our number
 area = pi*radius**2
 print(area)
