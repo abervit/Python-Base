@@ -35,16 +35,23 @@ print(floor(3.9))  # --> 3
 print(ceil(3.1))  # --> 4
 print(sqrt(36))  # --> 6.0 (returns the square root of a number)
 
+
 class Number:
     instances = []
+
     def __init__(self, number):
         self.number = number
+
     def __repr__(self):
         return str(self.number)
 
+    def __add__(self, other):
+        return self.number + other.number
+
+
 num1 = Number(33)
 num2 = Number(-23.34)
-print(num1) # --> 33
-print(num2) # --> -23.34
-print(type(num1)) # --> <class '__main__.Number'>
-
+print(num1)  # --> 33
+print(num2)  # --> -23.34
+print(type(num1))  # --> <class '__main__.Number'>
+print(num1.__add__(num2))
