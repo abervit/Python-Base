@@ -28,4 +28,9 @@ We also can specify the position space - like between 0th and 10th index of the 
 print(phrase.index("a", 0, 15)) # --> 3
 print(phrase.index("a")) # --> 3
 
+"""Some other functions"""
+phrase = "Giraffe Academy"
+print(phrase.count("a")) # --> 2
+print(phrase.count("a", 0, 3)) # --> 0
+
 
