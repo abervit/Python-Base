@@ -42,3 +42,8 @@ print(employee_file.readable())  # --> True
 for i in employee_file.readlines():
     print(i)  # --> prints out all the lines
 employee_file.close()
+
+file = open("/Users/Witoldo/Desktop/Test Job.txt", "r")
+print(file.readable())  # --> True
+print(file.read())
+file.close()
